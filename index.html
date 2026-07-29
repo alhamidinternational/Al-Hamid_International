@@ -386,48 +386,45 @@
     </div>
     <div class="reg-wrap">
       <div id="formMsg">জাযাকাল্লাহু খাইরান! আপনার আবেদন সফলভাবে জমা হয়েছে। আমরা শীঘ্রই যোগাযোগ করব ইনশাআল্লাহ।</div>
-       <form action="https://formspree.io/f/xkodejnn" method="POST">  
-        <div class="form-grid">
-          <div>
+       <form action="https://formspree.io/f/xkodejnn" method="POST">
+    <div class="form-grid">
+        <div>
             <label for="name">শিক্ষার্থীর পূর্ণ নাম *</label>
-            <input type="text" id="name" placeholder="নাম লিখুন" required>
-          </div>
-          <div>
-            <label for="age">বয়স *</label>
-            <input type="number" id="age" min="4" max="80" placeholder="বয়স" required>
-          </div>
-          <div>
-            <label for="phone">মোবাইল নম্বর *</label>
-            <input type="tel" id="phone" placeholder="01XXXXXXXXX" required>
-          </div>
-          <div>
-            <label for="email">ইমেইল (ঐচ্ছিক)</label>
-            <input type="email" id="email" placeholder="example@mail.com">
-          </div>
-          <div class="full">
-            <label for="course">কোন কোর্সে ভর্তি হতে চান? *</label>
-            <select id="course" required>
-              <option value="">নির্বাচন করুন</option>
-              <option>নূরানী ও কায়দা</option>
-              <option>নূরানী আমপারা</option>
-              <option>তাজবীদসহ তিলাওয়াত</option>
-              <option>হিফজুল কুরআন</option>
-              <option>অর্থসহ কুরআন অধ্যয়ন</option>
-              <option>শিশুদের ইসলামি শিক্ষা</option>
-              <option>আমলী সূরা হিফজ</option>
-              <option>বোনদের জন্য ফরজে আইন কোর্স</option>
-              <option>ভাইদের জন্য ফরজে আইন কোর্স</option>
-              <option>নতুন মুসলিমদের জন্য</option>
-            </select>
-          </div>
-          <div class="full">
-            <label for="msg">অতিরিক্ত কিছু বলতে চাইলে (ঐচ্ছিক)</label>
-            <textarea id="msg" rows="3" placeholder="সময় সংক্রান্ত পছন্দ বা অন্য কিছু লিখুন"></textarea>
-          </div>
+            <input type="text" id="name" name="student_name" placeholder="নাম লিখুন" required>
         </div>
-        <button type="submit" class="btn btn-primary">আবেদন জমা দিন</button>
-        <p class="form-note">* চিহ্নিত ঘরগুলো পূরণ করা আবশ্যক। আপনার তথ্য শুধু ভর্তি প্রক্রিয়ার জন্য ব্যবহৃত হবে।</p>
-      </form>
+        <div>
+            <label for="age">বয়স *</label>
+            <input type="number" id="age" name="age" min="4" max="80" placeholder="বয়স" required>
+        </div>
+        <div>
+            <label for="phone">মোবাইল নম্বর *</label>
+            <input type="tel" id="phone" name="phone" placeholder="০১XXXXXXXXX" required>
+        </div>
+        <div>
+            <label for="email">ইমেইল (ঐচ্ছিক)</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com">
+        </div>
+        <div class="full">
+            <label for="course">কোন কোর্সে ভর্তি হতে চান? *</label>
+            <select id="course" name="course" required>
+                <option value="">নির্বাচন করুন</option>
+                <option value="নূরানী ও কায়দা">নূরানী ও কায়দা</option>
+                <option value="নূরানী আমপারা">নূরানী আমপারা</option>
+                <option value="তাজবীদসহ তিলাওয়াত">তাজবীদসহ তিলাওয়াত</option>
+                <option value="শুদ্ধ তিলাওয়াতের জন্য কায়দা আমপারা কোর্স">শুদ্ধ তিলাওয়াতের জন্য কায়দা আমপারা কোর্স</option>
+                <option value="ভাইদের জন্য ফরজৈ আইন কোর্স">ভাইদের জন্য ফরজৈ আইন কোর্স</option>
+                <option value="নতুন মুসলিমদের জন্য">নতুন মুসলিমদের জন্য</option>
+            </select>
+        </div>
+        <div class="full">
+            <label for="msg">অতিরিক্ত কিছু বলতে চাইলে (ঐচ্ছিক)</label>
+            <textarea id="msg" rows="3" placeholder="সময় সংক্রান্ত পছন্দ বা অন্য কিছু লিখুন" name="message"></textarea>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">আবেদন জমা দিন</button>
+    <p class="form-note">* চিহ্নিত ঘরগুলো পূরণ করা আবশ্যক। আপনার তথ্য শুধু ভর্তি প্রক্রিয়ার জন্য ব্যবহৃত হবে।</p>
+</form>
     </div>
   </div>
 </section>
